@@ -26,27 +26,6 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 These signals were used to estimate variables of the feature vector for each pattern: ‘-XYZ’ is used to denote 3-axial signals in the X, Y and Z directions. They total 33 measurements including the 3 dimensions - the X,Y, and Z axes.
 
-tBodyAcc-XYZ 
-tGravityAcc-XYZ 
-tBodyAccJerk-XYZ 
-tBodyGyro-XYZ 
-tBodyGyroJerk-XYZ 
-tBodyAccMag 
-tGravityAccMag 
-tBodyAccJerkMag 
-tBodyGyroMag 
-tBodyGyroJerkMag 
-fBodyAcc-XYZ 
-fBodyAccJerk-XYZ 
-fBodyGyro-XYZ 
-fBodyAccMag 
-fBodyAccJerkMag 
-fBodyGyroMag 
-fBodyGyroJerkMag 
-The set of variables that were estimated from these signals are: 
-mean(): Mean value 
-std(): Standard deviation
-
 ## Our DATA
 
 The downloaded DATA from this above mentioned source includes the following files:
@@ -91,4 +70,6 @@ There are 5 steps that were made to transform our dataset into tidy data:
 ## The R-script "run_analysis.R" deals with all the transformations mentioned above.
 
 ## The Resulting Tidy Data
-10299 observatons are split into 180 groups (30 subjects and 6 activities) and 66 mean and standard deviation features are averaged for each group. The resulting data table has 180 rows and 68 columns – 33 Mean variables + 33 Standard deviation variables + 1 Subject ( 1 of of the 30 test subjects) + Activity. 
+- 10'299 observatons are split into 180 groups (30 subjects and 6 activities)
+- 66 mean and standard deviation features are averaged for each group. 
+- The resulting data frame has 180 rows and 68 columns – 33 Mean variables + 33 Standard deviation variables + Subject + Activity. 
