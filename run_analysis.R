@@ -50,7 +50,7 @@ selectedNames<-c(as.character(subset_dataFeaturesNames), "subject", "activity" )
 Data<-subset(FinalData,select=selectedNames)
 
 ### 3. Uses descriptive activity names to name the activities in the data set.
-## Read descriptive activity names from ???activity_labels.txt???
+## Read descriptive activity names from "activity_labels.txt"
 activityLabels <- read.table(file.path(filesPath, "activity_labels.txt"),header = FALSE)
 ## Create a new column "activity2" with the descriptive activity names depending on the activity numbers contained in the column "activity"
 index <- c(as.character(activityLabels$V1))
@@ -79,6 +79,8 @@ names(Data)<-gsub("BodyBody", "Body", names(Data))
 Data2<-aggregate(. ~subject + activity, Data, mean)
 Data2<-Data2[order(Data2$subject,Data2$activity),]
 write.table(Data2, file = "tidydata.txt",row.name=FALSE)
+
+## We are done!!
 
 
 
