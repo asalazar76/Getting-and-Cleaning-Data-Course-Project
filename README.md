@@ -9,9 +9,9 @@ Basically, one has to create an R script able to do the following 5 steps:
 
 ## This repo contains, other than this README.md file, 2 other files:
 1. run_analysis.R - R script that performs the 5 tasks described above. 
-2. CodeBook.md - A document describing the variables, data, and transformations made.
+2. CodeBook.md - A document describing the variables, its context, the data and the transformations made to it.
 
 ## Some details about the R-script
 - The script will automatically donwnload the files in the specified working directory and then it will unzip them.
-- The different libraries needed are contained on the script.
+- The different libraries needed are contained in the script.
 
